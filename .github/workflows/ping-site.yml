@@ -1,0 +1,13 @@
+name: Keep Website Awake
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # Every 10 minutes
+
+jobs:
+  ping-website:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Curl Ping My Website
+      run: curl -s -o /dev/null -w "%{http_code}" https://92slq227v2r3z8hdv34e5e33p26x9sl3q232wrz368h.tryasp.net/api/HomeAPI/BinanceBot
