@@ -11,4 +11,4 @@ jobs:
 
     steps:
     - name: Curl Ping My Website
-      run: curl -s -o /dev/null -w "%{http_code}" https://92slq227v2r3z8hdv34e5e33p26x9sl3q232wrz368h.tryasp.net/api/HomeAPI/BinanceBot
+      run: curl -s -o /dev/null -w "%{http_code}" http://136.0.141.234/api/HomeAPI/BinanceBot
